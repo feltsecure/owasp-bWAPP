@@ -9,8 +9,8 @@ RUN rm -fr /app/* && \
 
 # Deploy bWAPP
 RUN wget -O /tmp/bwapp.zip https://sourceforge.net/projects/bwapp/files/latest/download && \
-  unzip /tmp/bwapp.zip -d /tmp/bwapp &&
-	mv /tmp/bwapp/bWAPP/* /app
+  unzip /tmp/bwapp.zip -d /tmp/bwapp && \
+  mv /tmp/bwapp/bWAPP/* /app && \
   rm -rf /tmp/bwapp*
 
 # Setup
